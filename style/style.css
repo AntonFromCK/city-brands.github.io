@@ -1,0 +1,375 @@
+@import "reset.css";
+@import "../font/Alegreya/alegreyasans.css";
+@import url('https://fonts.googleapis.com/css?family=Jura');
+@import "fontello/fontello.css";
+body {
+  color: #000100;
+  font-family: 'Jura', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #e30a1b;
+  transition: 1s;
+}
+.color-grey {
+  color: grey;
+}
+.active {
+  color: #e30a1b;
+}
+header {
+  position: relative;
+}
+header .row {
+  width: 100%;
+  padding-top: 40px;
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .row .social-icon-block {
+  width: 50%;
+}
+header .row .social-icon-block {
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header .row .social-icon-block li a {
+  margin: 10px 15px;
+}
+header .row nav {
+  width: 50%;
+  padding-left: 5%;
+}
+header .row nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+header .row nav ul li a {
+  padding: 9px 16px;
+  display: block;
+}
+header .row nav ul li .nav-logo {
+  padding: 0;
+}
+header .row nav ul li .nav-logo img {
+  width: 50px;
+}
+footer {
+  padding: 1.5em 0;
+  margin: 6em auto 0 auto;
+  width: 100%;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+footer p {
+  text-align: center;
+  margin-top: 20px;
+  color: grey;
+}
+/*preset page*/
+.logo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+}
+.logo-wrapper img {
+  width: 500px;
+  height: 388px;
+}
+.logo-wrapper p {
+  text-align: center;
+  opacity: 1;
+  color: #000100;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-top: 30px;
+}
+.short-info {
+  padding: 40px 0;
+  text-align: center;
+}
+.short-info h1 {
+  font-size: 2em;
+}
+.short-info .row {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.short-info .row .img-block {
+  width: 60%;
+}
+.short-info .row .img-block .slider-shop .slick-prev {
+  display: none!important;
+}
+.short-info .row .img-block .slider-shop .slick-next {
+  display: none!important;
+}
+.short-info .row .img-block .slider-shop div img {
+  height: 100%;
+  width: 100%;
+}
+.short-info .row .description {
+  width: 60%;
+  font-size: 2em;
+  padding: 20px;
+}
+.fullwidth-bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -100;
+}
+.fullwidth-bg .fullwidth-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.fullwidth-bg .video-layer {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  text-align: center;
+  padding-top: 200px;
+}
+@media (max-width: 767px) {
+  .fullwidth-bg {
+    background: url('/video/Vespa-Bokeh.jpg') center center / cover no-repeat;
+  }
+  .fullwidth-bg__video {
+    display: none;
+  }
+}
+/*preset page end*/
+#brands {
+  padding-top: 110px;
+}
+#brands h1 {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 2em;
+}
+#brands .wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+#brands .wrapper .brand-list li {
+  margin: 20px 0;
+}
+#brands .wrapper .brand-list li figure {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#brands .wrapper .brand-list li figure figcaption {
+  width: 40%;
+  padding: 0 20px;
+}
+#brands .wrapper .brand-list li figure .brand-img {
+  width: 60%;
+}
+#brands .wrapper .brand-list li figure .brand-img img {
+  width: 100%;
+  height: auto;
+}
+#brands .wrapper .brand-list li .figure-reverse {
+  flex-direction: row-reverse;
+}
+#shops {
+  padding-top: 110px;
+}
+#shops h1 {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 2em;
+}
+#shops .wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+#shops .wrapper .shops-list li {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#shops .wrapper .shops-list li .info-block {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+#shops .wrapper .shops-list li .info-block h2 {
+  font-size: 2.5em;
+}
+#shops .wrapper .shops-list li .info-block p {
+  padding: 24px 0;
+  font-size: 1.5em;
+}
+#shops .wrapper .shops-list li .maps {
+  width: 100%;
+}
+#shops .wrapper .shops-list li .maps img {
+  width: 100%;
+  height: auto;
+}
+#shops .wrapper .shops-list .reverse {
+  flex-direction: column;
+}
+#wholesale {
+  padding-top: 110px;
+}
+#wholesale h1 {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 2em;
+}
+#wholesale .wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+#wholesale .wrapper .logo {
+  width: 130px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#wholesale .wrapper .info {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#wholesale .wrapper .info-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 35px 0;
+}
+#wholesale .wrapper .info-list li {
+  width: 30%;
+}
+#wholesale .wrapper .info-list li img {
+  width: 100%;
+  height: auto;
+}
+#contact {
+  padding-top: 110px;
+}
+#contact h1 {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 2em;
+}
+#contact .wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+#contact .wrapper .info-block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#contact .wrapper .info-block .city-brand-contact,
+#contact .wrapper .info-block .wholesale-contact {
+  text-align: center;
+  width: 50%;
+}
+#contact .wrapper .info-block .city-brand-contact h2,
+#contact .wrapper .info-block .wholesale-contact h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
+#contact .wrapper .info-block .city-brand-contact .contact-list,
+#contact .wrapper .info-block .wholesale-contact .contact-list {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+#contact .wrapper .info-block .city-brand-contact .contact-list li,
+#contact .wrapper .info-block .wholesale-contact .contact-list li {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+#contact .wrapper .info-block .city-brand-contact .contact-list li .title,
+#contact .wrapper .info-block .wholesale-contact .contact-list li .title {
+  color: grey;
+  margin-right: 1em;
+}
+#contact .wrapper .info-block .city-brand-contact .contact-list li .info,
+#contact .wrapper .info-block .wholesale-contact .contact-list li .info {
+  color: grey;
+}
+#contact .wrapper .info-block .city-brand-contact .contact-list li .info a,
+#contact .wrapper .info-block .wholesale-contact .contact-list li .info a {
+  color: grey;
+}
+#contact .wrapper .info-block .city-brand-contact {
+  border-right: 1px solid #e2dfdf;
+}
+#contact .wrapper .maps-block {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+#contact .wrapper .maps-block div {
+  width: 50%;
+  padding: 0 5px;
+}
+#contact .wrapper .maps-block .city-brand-map {
+  border-right: 1px solid #e2dfdf;
+}
+.icon-phone,
+.icon-twitter,
+.icon-youtube,
+.icon-instagram,
+.icon-vkontakte,
+.icon-envelope-open-o,
+.icon-facebook-squared {
+  font-size: 1.5em;
+}
+.icon-phone:before {
+  content: '\e800';
+}
+.icon-twitter:before {
+  content: '\f099';
+}
+.icon-youtube:before {
+  content: '\f167';
+}
+.icon-instagram:before {
+  content: '\f16d';
+}
+.icon-vkontakte:before {
+  content: '\f189';
+}
+.icon-envelope-open-o:before {
+  content: '\f2b7';
+}
+.icon-facebook-squared:before {
+  content: '\f308';
+}
+/*# sourceMappingURL=style.css.map */

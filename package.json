@@ -1,0 +1,14 @@
+{
+  "name": "city-brands",
+  "version": "1.0.0",
+  "description": "city-brands store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anton_nechuporenko",
+  "license": "ISC",
+  "devDependencies": {
+    "jquery": "^3.3.1"
+  }
+}
