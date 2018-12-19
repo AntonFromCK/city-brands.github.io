@@ -20,6 +20,9 @@ a:hover {
 .active {
   color: #e30a1b;
 }
+.bold {
+  font-weight: bold;
+}
 header {
   position: relative;
 }
@@ -130,6 +133,12 @@ footer p {
   width: 60%;
   font-size: 2em;
   padding: 20px;
+}
+.short-info .row .description .bold {
+  font-size: 1.1em;
+}
+.short-info .row .description .hint {
+  font-size: .5em;
 }
 .fullwidth-bg {
   position: relative;
