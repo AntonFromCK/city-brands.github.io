@@ -177,7 +177,7 @@ footer p {
   margin: 0 auto;
 }
 #brands .wrapper .brand-list li {
-  margin: 20px 0;
+  /*margin: 20px 0;*/
 }
 #brands .wrapper .brand-list li figure {
   display: flex;
@@ -185,12 +185,12 @@ footer p {
   align-items: center;
 }
 #brands .wrapper .brand-list li figure figcaption {
-  width: 40%;
-  padding: 0 20px;
-  font-size: 1.8em;
+  width: 48.5%;
+  padding: 0 10px;
+  font-size: 1.5em;
 }
 #brands .wrapper .brand-list li figure .brand-img {
-  width: 60%;
+  width: 50%;
 }
 #brands .wrapper .brand-list li figure .brand-img img {
   width: 100%;
