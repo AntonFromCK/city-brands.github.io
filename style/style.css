@@ -173,7 +173,7 @@ footer p {
   font-size: 2em;
 }
 #brands .wrapper {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
 }
 #brands .wrapper .brand-list li {
@@ -187,6 +187,7 @@ footer p {
 #brands .wrapper .brand-list li figure figcaption {
   width: 40%;
   padding: 0 20px;
+  font-size: 1.8em;
 }
 #brands .wrapper .brand-list li figure .brand-img {
   width: 60%;
