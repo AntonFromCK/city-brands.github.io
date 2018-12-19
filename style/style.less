@@ -139,11 +139,12 @@ footer{
     width: 90%;
     margin: 0 auto;
     margin-top: 40px;
+    justify-content: center;
     display: flex;
     align-items: center;
 
     .img-block{
-      width: 50%;
+      width: 40%;
       .slider-shop{
         .slick-prev{
           display: none!important;
@@ -160,13 +161,15 @@ footer{
       }
     }
     .description{
-      width: 60%;
+      width: 35%;
       padding: 20px 5%;
       .bold{
-        font-size: 2em;
+        font-size: 1.7em;
       }
       .hint{
-        font-size: .8em;
+        margin-top: 10px;
+        display: block;
+        font-size: 1em;
       }
     }
   }
@@ -230,7 +233,8 @@ footer{
           figcaption{
             width: 48.5%;
             padding: 0 10px;
-            font-size: 1.5em;
+            font-size: 1.2em;
+            text-align: center;
           }
           .brand-img{
             width: 50%;
@@ -390,6 +394,16 @@ footer{
       .city-brand-map{
         border-right: 1px solid #e2dfdf;
       }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1024px) {/*1150px*/
+  .logo-wrapper{
+    img{
+      width: 500px;
+      height: 388px;
     }
   }
 }

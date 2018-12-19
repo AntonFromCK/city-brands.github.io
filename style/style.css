@@ -113,11 +113,12 @@ footer p {
   width: 90%;
   margin: 0 auto;
   margin-top: 40px;
+  justify-content: center;
   display: flex;
   align-items: center;
 }
 .short-info .row .img-block {
-  width: 50%;
+  width: 40%;
 }
 .short-info .row .img-block .slider-shop .slick-prev {
   display: none!important;
@@ -130,14 +131,16 @@ footer p {
   width: 100%;
 }
 .short-info .row .description {
-  width: 60%;
+  width: 35%;
   padding: 20px 5%;
 }
 .short-info .row .description .bold {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 .short-info .row .description .hint {
-  font-size: .8em;
+  margin-top: 10px;
+  display: block;
+  font-size: 1em;
 }
 .fullwidth-bg {
   position: relative;
@@ -195,7 +198,8 @@ footer p {
 #brands .wrapper .brand-list li figure figcaption {
   width: 48.5%;
   padding: 0 10px;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  text-align: center;
 }
 #brands .wrapper .brand-list li figure .brand-img {
   width: 50%;
@@ -350,6 +354,13 @@ footer p {
 }
 #contact .wrapper .maps-block .city-brand-map {
   border-right: 1px solid #e2dfdf;
+}
+@media screen and (max-width: 1024px) {
+  /*1150px*/
+  .logo-wrapper img {
+    width: 500px;
+    height: 388px;
+  }
 }
 .icon-phone,
 .icon-twitter,
