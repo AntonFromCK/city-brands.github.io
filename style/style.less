@@ -103,10 +103,23 @@ header{
     width: 100vw;
     height: 100vh;
     text-align: center;
-    padding: 30% 0;
-    background: #000000b3;
+    padding: 20% 0;
+    background: #000000d9;;
     z-index: 1;
     font-size: 1.3em;
+
+    nav{
+      ul{
+        li{
+          a{
+            width: 100%;
+            display: block;
+            padding: 10px 0;
+
+          }
+        }
+      }
+    }
   }
 }
 //footer
@@ -218,6 +231,9 @@ footer{
     z-index: 5;
     text-align: center;
     padding-top: 200px;
+  }
+  video{
+    min-width: 100%;
   }
 }
 /*@media (max-width: 767px) {
@@ -708,11 +724,23 @@ footer{
       }
     }
   }
-
+  #wholesale{
+    .wrapper{
+      width: 95%;
+      .info{
+        width: 100%;
+      }
+      .map{
+        width: 95%;
+        h2{
+          font-size: 1em;
+        }
+      }
+    }
+  }
   #brands, #contact, #wholesale, #shops{
     padding-top: 80px;
   }
-
   footer{
     margin: 0;
     padding: 1em 0;

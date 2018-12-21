@@ -82,10 +82,15 @@ header .nav-mob-wrapper {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  padding: 30% 0;
-  background: #000000b3;
+  padding: 20% 0;
+  background: #000000d9;
   z-index: 1;
   font-size: 1.3em;
+}
+header .nav-mob-wrapper nav ul li a {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
 }
 footer {
   padding: 1.5em 0;
@@ -186,6 +191,9 @@ footer p {
   z-index: 5;
   text-align: center;
   padding-top: 200px;
+}
+.fullwidth-bg video {
+  min-width: 100%;
 }
 /*@media (max-width: 767px) {
   .fullwidth-bg {
@@ -627,6 +635,18 @@ footer p {
     border: none;
     width: 100%;
     padding: 0;
+  }
+  #wholesale .wrapper {
+    width: 95%;
+  }
+  #wholesale .wrapper .info {
+    width: 100%;
+  }
+  #wholesale .wrapper .map {
+    width: 95%;
+  }
+  #wholesale .wrapper .map h2 {
+    font-size: 1em;
   }
   #brands,
   #contact,
