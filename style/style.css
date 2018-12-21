@@ -664,7 +664,7 @@ footer p {
 }
 @media screen and (max-width: 550px) {
   .fullwidth-bg {
-    background: url('../img/Vespa-Bokeh.jpg') center center / cover no-repeat;
+    display: none;
     height: 500px;
   }
   .fullwidth-bg .logo-wrapper {
@@ -682,8 +682,8 @@ footer p {
     margin: 0;
     font-size: 1em;
   }
-  .fullwidth-bg video {
-    display: none;
+  .short-info {
+    padding-top: 60px;
   }
 }
 .icon-phone,
