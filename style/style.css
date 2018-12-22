@@ -659,6 +659,15 @@ footer p {
   }
 }
 @media screen and (max-width: 550px) {
+  #present .logo-wrapper {
+    padding-top: 80px!important;
+  }
+  #present .logo-wrapper .block {
+    width: 30%!important;
+  }
+  #present .logo-wrapper p {
+    font-size: 1em;
+  }
   #present .wrapper {
     width: 95%;
   }
