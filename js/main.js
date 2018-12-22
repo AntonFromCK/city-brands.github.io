@@ -1,4 +1,11 @@
 $(document).ready(function(){
+
+    $('.present-slider').slick({
+        adaptiveHeight:true,
+        slidesToShow: 3,
+        autoplay:true,
+        autoplaySpeed:2000
+    });
     $('.slider-shop').slick({
         adaptiveHeight:true,
         slidesToShow: 1,

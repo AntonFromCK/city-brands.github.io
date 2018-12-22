@@ -51,7 +51,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     .social-icon-block{
-      width: 50%;
+      width: auto;
     }
     .social-icon-block{
       padding-right: 5%;
@@ -65,7 +65,7 @@ header{
       }
     }
     nav{
-      width: 50%;
+      width: auto;
       padding-left: 5%;
       ul{
         display: flex;
@@ -143,22 +143,52 @@ footer{
 
 
 /*preset page*/
-.logo-wrapper{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -250px 0 0 -250px;
-  img {
-    width: 500px;
-    height: 388px;
-  }
-  p{
+
+#present{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  padding-bottom: 50px;
+  .logo-wrapper{
+    padding-top: 50px;
     text-align: center;
-    opacity: 1;
-    color: @mainColor1;
-    text-transform: uppercase;
-    font-size: 2em;
+    .block{
+      width: 10%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    p{
+      text-align: center;
+      opacity: 1;
+      color: @mainColor3;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+  }
+  .wrapper{
+    width: 90%;
+    margin: 0 auto;
     margin-top: 30px;
+    .present-slider{
+      .slick-prev{
+        display: none!important;
+      }
+      .slick-next{
+        display: none!important;
+      }
+      div{
+        margin-right: 10px;
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -209,42 +239,6 @@ footer{
   }
 }
 
-.fullwidth-bg {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  z-index: -100;
-  .fullwidth-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  .video-layer{
-    background: rgba(0,0,0,0.5);
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    text-align: center;
-    padding-top: 200px;
-  }
-  video{
-    min-width: 100%;
-  }
-}
-/*@media (max-width: 767px) {
-  .fullwidth-bg {
-    background: url('/video/Vespa-Bokeh.jpg') center center / cover no-repeat;
-  }
-
-  .fullwidth-bg__video {
-    display: none;
-  }
-}*/
 /*preset page end*/
 
 
@@ -468,14 +462,11 @@ footer{
 }
 @media screen and (max-width: 1024px) {
   .logo-wrapper{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -140px 0 0 -200px;
-    img{
-      width: 300px;
-      height: 200px;
+    padding-top: 90px!important;
+
+    p{
+      font-size: 1em;
+      margin-top: 20px;
     }
   }
   .short-info{
@@ -516,6 +507,17 @@ footer{
 }
 
 @media screen and (max-width: 767px) {
+  .logo-wrapper{
+    padding-top: 50px!important;
+    .block{
+      width: 20% !important;
+    }
+
+    p{
+      font-size: 1em;
+      margin-top: 20px;
+    }
+  }
 
   header{
     .row{
@@ -750,22 +752,13 @@ footer{
   }
 }
 @media screen and (max-width: 550px) {
-  .fullwidth-bg{
-    display: none;
-    height: 500px;
-    .logo-wrapper{
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: -40px 0 0 -100px;
-      img{
-        width: 100px;
-        height: 70px;
-      }
-      p{
-        margin: 0;
-        font-size: 1em;
+  #present{
+    .wrapper{
+      width: 95%;
+      .resent-slider{
+        div{
+          margin: 0 !important;
+        }
       }
     }
   }
