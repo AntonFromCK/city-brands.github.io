@@ -6,12 +6,6 @@ $(document).ready(function(){
         autoplay:true,
         autoplaySpeed:2000
     });
-    $('.slider-shop').slick({
-        adaptiveHeight:true,
-        slidesToShow: 1,
-        autoplay:true,
-        autoplaySpeed:2000
-    });
     $('#mob-nav-icon').click(function(){
         $(this).toggleClass('open');
         if($(this).hasClass('open')){
