@@ -4,7 +4,15 @@ $(document).ready(function(){
         adaptiveHeight:true,
         slidesToShow: 3,
         autoplay:true,
-        autoplaySpeed:2000
+        autoplaySpeed:2000,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
     $('#mob-nav-icon').click(function(){
         $(this).toggleClass('open');

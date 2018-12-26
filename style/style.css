@@ -696,6 +696,9 @@ footer p {
   footer nav {
     display: none;
   }
+  #present .wrapper .present-slider div {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 550px) {
   #present .logo-wrapper {
