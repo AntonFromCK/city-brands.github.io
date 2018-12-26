@@ -268,23 +268,31 @@ footer p {
   flex-direction: column;
 }
 #wholesale {
-  padding-top: 110px;
+  padding-top: 70px;
 }
 #wholesale h1 {
   padding: 30px 0;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 #wholesale .wrapper {
   width: 95%;
   margin: 0 auto;
 }
-#wholesale .wrapper .logo {
+#wholesale .wrapper .logo-block {
   width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
+}
+#wholesale .wrapper .logo-block img {
+  width: 100%;
+  height: auto;
+}
+#wholesale .wrapper .logo-block p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.5em;
 }
 #wholesale .wrapper .info {
   width: 60%;
@@ -323,7 +331,7 @@ footer p {
 }
 #wholesale .wrapper .map h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 10px 0;
 }
 #wholesale .wrapper .map h2 .title {
@@ -399,7 +407,7 @@ footer p {
   border-right: 1px solid #e2dfdf;
 }
 #contact .wrapper .maps-block {
-  display: flex;
+  display: none;
   justify-content: space-around;
   margin-top: 35px;
 }
