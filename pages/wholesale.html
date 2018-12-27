@@ -81,7 +81,7 @@
                 </p>
             </li>
             <li>
-                <img src="../img/wholesale/IMG_2144.JPG" alt="logo">
+                <img src="../img/wholesale/IMG_2157.jpg" alt="logo">
                 <h2>
                     Хто наші замовники?
                 </h2>
@@ -99,7 +99,9 @@
                     Як придбати товар?
                 </h2>
                 <p>
-                    Ти можеш обрати товар у нас на складі, <br> а також замовити по телефону <br> чи в інтернеті.
+                    Ти можеш обрати товар у нас на складі, <br>
+                    а також замовити по телефону, на сайті <br>
+                    чи в instagram.
                 </p>
             </li>
         </ul>
@@ -116,19 +118,19 @@
                 <h2>
                     <span class="title">Зв'язатися з нами</span>
                 </h2>
-                <form>
+                <form action="../index.php" method="post" id="messageForm">
                     <fieldset>
                         <p>
                             <label for="email">Ваш E-mail</label> <br>
-                            <input type="email" id="email">
+                            <input type="email" id="email" name="email">
                         </p>
                         <p>
                             <label for="name">Ваше ім'я</label> <br>
-                            <input type="text" id="name">
+                            <input type="text" id="name" name="name">
                         </p>
                         <p>
                             <label for="message">Повідомлення</label> <br>
-                            <textarea name="comment" cols="40" rows="3" id="message"></textarea>
+                            <textarea cols="40" rows="3" id="message" name="message"></textarea>
                         </p>
                     </fieldset>
                     <p><input type="submit" value="Отправить" class="submitBtn"></p>
