@@ -273,9 +273,10 @@ footer p {
 #wholesale h1 {
   text-align: center;
   font-size: 2em;
+  font-weight: bold;
 }
 #wholesale .wrapper {
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
 }
 #wholesale .wrapper .logo-block {
@@ -295,7 +296,7 @@ footer p {
 }
 #wholesale .wrapper .info-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 35px 0;
 }
 #wholesale .wrapper .info-list li {
