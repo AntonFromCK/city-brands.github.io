@@ -302,7 +302,11 @@ footer p {
   width: 30%;
   text-align: center;
 }
-#wholesale .wrapper .info-list li img {
+#wholesale .wrapper .info-list li .img-block {
+  padding: 10px 10px 45px 10px;
+  background: red;
+}
+#wholesale .wrapper .info-list li .img-block img {
   width: 100%;
   height: auto;
 }
