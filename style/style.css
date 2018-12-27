@@ -309,17 +309,13 @@ footer p {
   height: auto;
 }
 #wholesale .wrapper .info-list li h2 {
-  font-size: 2.5em;
+  font-size: 2.3em;
   padding: 20px 0;
   font-weight: bold;
 }
 #wholesale .wrapper .info-list li p {
   line-height: 1.2;
-  font-size: 1.5em;
-}
-#wholesale .wrapper .info-list li p {
-  line-height: 1.2;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 #wholesale .wrapper .map {
   width: 70%;
