@@ -317,23 +317,69 @@ footer p {
   line-height: 1.2;
   font-size: 1.3em;
 }
-#wholesale .wrapper .map {
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 30px;
+#wholesale .wrapper .contact-block {
+  display: flex;
 }
-#wholesale .wrapper .map h2 {
+#wholesale .wrapper .contact-block .map {
+  width: 50%;
+}
+#wholesale .wrapper .contact-block .map h2 {
   text-align: center;
   font-size: 1.5em;
   padding: 10px 0;
 }
-#wholesale .wrapper .map h2 .title {
+#wholesale .wrapper .contact-block .map h2 .title {
   font-size: 2em;
   display: block;
 }
-#wholesale .wrapper .map h2 img {
+#wholesale .wrapper .contact-block .map h2 img {
   height: 15px;
   width: 15px;
+}
+#wholesale .wrapper .contact-block .form-block {
+  width: 50%;
+}
+#wholesale .wrapper .contact-block .form-block h2 {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px 0 55px 0;
+}
+#wholesale .wrapper .contact-block .form-block h2 .title {
+  font-size: 2em;
+  display: block;
+}
+#wholesale .wrapper .contact-block .form-block h2 img {
+  height: 15px;
+  width: 15px;
+}
+#wholesale .wrapper .contact-block .form-block form {
+  padding: 0 15px;
+}
+#wholesale .wrapper .contact-block .form-block form p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#wholesale .wrapper .contact-block .form-block form p label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+#wholesale .wrapper .contact-block .form-block form p input {
+  width: 80%;
+  height: 25px;
+  border: 1px solid #8080806b;
+  border-radius: 5px;
+}
+#wholesale .wrapper .contact-block .form-block form p textarea {
+  width: 80%;
+  height: 170px;
+  border: 1px solid #8080806b;
+  border-radius: 5px;
+}
+#wholesale .wrapper .contact-block .form-block form p .submitBtn {
+  width: 30%;
+  background: red;
+  color: #fff;
+  border-radius: 5px;
 }
 #contact {
   padding-top: 110px;

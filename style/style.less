@@ -369,24 +369,72 @@ footer{
         }
       }
     }
-    .map{
-      width: 70%;
-      margin: 0 auto;
-      margin-top: 30px;
-      h2{
-        text-align: center;
-        font-size: 1.5em;
-        padding: 10px 0;
-        .title{
-          font-size: 2em;
-          display: block;
+    .contact-block{
+      display: flex;
+      .map{
+        width: 50%;
+        h2{
+          text-align: center;
+          font-size: 1.5em;
+          padding: 10px 0;
+          .title{
+            font-size: 2em;
+            display: block;
+          }
+          img{
+            height: 15px;
+            width: 15px;
+          }
         }
-        img{
-          height: 15px;
-          width: 15px;
+      }
+      .form-block{
+        width: 50%;
+        h2{
+          text-align: center;
+          font-size: 1.5em;
+          padding: 10px 0 55px 0;
+          .title{
+            font-size: 2em;
+            display: block;
+          }
+          img{
+            height: 15px;
+            width: 15px;
+          }
+        }
+        form{
+          padding: 0 15px;
+
+          p{
+            text-align: center;
+            margin-bottom: 15px;
+            label{
+              margin-bottom: 5px;
+              display: inline-block;
+            }
+            input{
+              width: 80%;
+              height: 25px;
+              border: 1px solid #8080806b;
+              border-radius: 5px;
+            }
+            textarea{
+              width: 80%;
+              height: 170px;
+              border: 1px solid #8080806b;
+              border-radius: 5px;
+            }
+            .submitBtn{
+              width: 30%;
+              background: red;
+              color: #fff;
+              border-radius: 5px;
+            }
+          }
         }
       }
     }
+
   }
 }
 //contact
