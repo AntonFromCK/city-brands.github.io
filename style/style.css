@@ -717,6 +717,7 @@ footer p {
   #wholesale .wrapper .info-list li {
     width: 95%;
     margin: 0 auto;
+    padding: 0;
   }
   #wholesale .wrapper .info-list li h2 {
     font-size: 2.5em;
@@ -724,11 +725,14 @@ footer p {
   #wholesale .wrapper .info-list li p {
     font-size: 1.2em;
   }
-  #wholesale .wrapper .map {
-    width: 95%;
+  #wholesale .wrapper .contact-block {
+    flex-direction: column;
   }
-  #wholesale .wrapper .map h2 {
-    font-size: 1em;
+  #wholesale .wrapper .contact-block .map,
+  #wholesale .wrapper .contact-block .form-block {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
   }
   #brands,
   #contact,
