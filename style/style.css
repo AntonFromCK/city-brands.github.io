@@ -336,51 +336,6 @@ footer p {
   height: 15px;
   width: 15px;
 }
-#wholesale .wrapper .contact-block .form-block {
-  width: 50%;
-}
-#wholesale .wrapper .contact-block .form-block h2 {
-  text-align: center;
-  font-size: 1.5em;
-  padding: 10px 0 55px 0;
-}
-#wholesale .wrapper .contact-block .form-block h2 .title {
-  font-size: 2em;
-  display: block;
-}
-#wholesale .wrapper .contact-block .form-block h2 img {
-  height: 15px;
-  width: 15px;
-}
-#wholesale .wrapper .contact-block .form-block form {
-  padding: 0 15px;
-}
-#wholesale .wrapper .contact-block .form-block form p {
-  text-align: center;
-  margin-bottom: 15px;
-}
-#wholesale .wrapper .contact-block .form-block form p label {
-  margin-bottom: 5px;
-  display: inline-block;
-}
-#wholesale .wrapper .contact-block .form-block form p input {
-  width: 80%;
-  height: 25px;
-  border: 1px solid #8080806b;
-  border-radius: 5px;
-}
-#wholesale .wrapper .contact-block .form-block form p textarea {
-  width: 80%;
-  height: 170px;
-  border: 1px solid #8080806b;
-  border-radius: 5px;
-}
-#wholesale .wrapper .contact-block .form-block form p .submitBtn {
-  width: 30%;
-  background: red;
-  color: #fff;
-  border-radius: 5px;
-}
 #contact {
   padding-top: 110px;
 }
@@ -457,6 +412,52 @@ footer p {
 #contact .wrapper .maps-block .city-brand-map {
   border-right: 1px solid #e2dfdf;
 }
+#contact .form-block {
+  width: 70%;
+  margin: 0 auto;
+}
+#contact .form-block h2 {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px 0 55px 0;
+}
+#contact .form-block h2 .title {
+  font-size: 2em;
+  display: block;
+}
+#contact .form-block h2 img {
+  height: 15px;
+  width: 15px;
+}
+#contact .form-block form {
+  padding: 0 15px;
+}
+#contact .form-block form p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#contact .form-block form p label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+#contact .form-block form p input {
+  width: 80%;
+  height: 25px;
+  border: 1px solid #8080806b;
+  border-radius: 5px;
+}
+#contact .form-block form p textarea {
+  width: 80%;
+  height: 170px;
+  border: 1px solid #8080806b;
+  border-radius: 5px;
+}
+#contact .form-block form p .submitBtn {
+  width: 30%;
+  background: red;
+  color: #fff;
+  border-radius: 5px;
+}
 @media screen and (max-width: 1366px) {
   #contact .contact-list {
     width: 80%!important;
@@ -516,6 +517,7 @@ footer p {
   }
   .logo-wrapper .block {
     width: 20% !important;
+    display: none;
   }
   .logo-wrapper p {
     font-size: 1em;
@@ -635,7 +637,7 @@ footer p {
     font-size: 1em;
   }
   .short-info .row .description .hint {
-    font-size: .7em;
+    font-size: .9em;
   }
   .short-info .row .img-block {
     width: 100% !important;
@@ -705,6 +707,19 @@ footer p {
     width: 100%;
     padding: 0;
   }
+  #contact .form-block {
+    width: 95%;
+  }
+  #contact .form-block form {
+    padding: 0;
+  }
+  #contact .form-block form fieldset p input,
+  #contact .form-block form fieldset p textarea {
+    width: 100%;
+  }
+  #contact .form-block form p .submitBtn {
+    width: 100%;
+  }
   #wholesale .wrapper {
     width: 95%;
   }
@@ -753,7 +768,7 @@ footer p {
 }
 @media screen and (max-width: 550px) {
   #present .logo-wrapper {
-    padding-top: 80px!important;
+    padding-top: 60px!important;
   }
   #present .logo-wrapper .block {
     width: 30%!important;
