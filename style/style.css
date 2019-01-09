@@ -190,6 +190,12 @@ footer p {
   display: block;
   font-size: 1em;
 }
+.short-info .info-list{
+  margin-top: 10px;
+}
+.short-info .info-list li{
+  margin-top: 10px;
+}
 /*preset page end*/
 #brands {
   padding-top: 110px;
@@ -413,13 +419,13 @@ footer p {
   border-right: 1px solid #e2dfdf;
 }
 #contact .form-block {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 #contact .form-block h2 {
   text-align: center;
   font-size: 1.5em;
-  padding: 10px 0 55px 0;
+  padding: 0 0 20px 0;
 }
 #contact .form-block h2 .title {
   font-size: 2em;
@@ -514,10 +520,10 @@ footer p {
 @media screen and (max-width: 767px) {
   .logo-wrapper {
     padding-top: 50px!important;
+    display: none;
   }
   .logo-wrapper .block {
     width: 20% !important;
-    display: none;
   }
   .logo-wrapper p {
     font-size: 1em;
@@ -550,6 +556,7 @@ footer p {
     height: 26px;
     position: relative;
     margin-right: 10px;
+    margin-top: 10px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -762,8 +769,13 @@ footer p {
   footer nav {
     display: none;
   }
+  
   #present .wrapper .present-slider div {
     margin-right: 0;
+  }
+  #present .wrapper{
+    margin-top: 0;
+    padding-top: 70px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -783,7 +795,7 @@ footer p {
     margin: 0 !important;
   }
   .short-info {
-    padding-top: 60px;
+/*    padding-top: 60px;*/
   }
 }
 .icon-phone,

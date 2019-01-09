@@ -229,6 +229,9 @@ footer{
       }
     }
   }
+  .info-list{
+    margin-top: 10px;
+  }
 }
 
 /*preset page end*/
@@ -407,7 +410,7 @@ footer{
       justify-content: space-between;
       flex-direction: row;
 
-      .city-brand-contact, .wholesale-contact{
+      .city-brand-contact, .form-block{
         text-align: center;
         width: 50%;
         h2{
@@ -461,12 +464,12 @@ footer{
     }
   }
   .form-block{
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     h2{
       text-align: center;
       font-size: 1.5em;
-      padding: 10px 0 55px 0;
+      padding: 0 0 20px 0;
       .title{
         font-size: 2em;
         display: block;
@@ -591,10 +594,11 @@ footer{
 
 @media screen and (max-width: 767px) {
   .logo-wrapper{
+    display: none;
     padding-top: 50px!important;
     .block{
       width: 20% !important;
-      display: none;
+      
     }
 
     p{
@@ -630,6 +634,7 @@ footer{
         height: 26px;
         position: relative;
         margin-right: 10px;
+        margin-top: 10px;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -789,7 +794,7 @@ footer{
         flex-direction: column;
         align-items: center;
 
-        .city-brand-contact, .wholesale-contact{
+        .city-brand-contact, .form-block{
           border: none;
           width: auto;
           h2{
@@ -870,6 +875,12 @@ footer{
       display: none;
     }
   }
+  #present{
+    .wrapper{
+      margin-top: 0;
+      padding-top: 70px;
+    }
+  }
 
   #present .wrapper .present-slider div{
     margin-right: 0;
@@ -896,7 +907,7 @@ footer{
     }
   }
   .short-info{
-    padding-top: 60px;
+//    padding-top: 60px;
   }
 }
 //icons pack
