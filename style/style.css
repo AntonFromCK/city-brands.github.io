@@ -505,6 +505,12 @@ footer p {
   .short-info .description .bold {
     font-size: 1.5em;
   }
+  .short-info .info-list {
+    width: 100%;
+  }
+  .short-info .info-list li {
+    margin: 10px;
+  }
   #brands .wrapper {
     width: 75%;
   }
