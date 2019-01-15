@@ -1,7 +1,12 @@
 @import "reset.css";
 @import "../font/Alegreya/alegreyasans.css";
-@import url('https://fonts.googleapis.com/css?family=Jura');
 @import "fontello/fontello.css";
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Jura Regular'), local('Jura-Regular'), url(https://fonts.gstatic.com/s/jura/v9/z7NbdRfiaC4VXcRJVA.ttf) format('truetype');
+}
 body {
   color: #000100;
   font-family: 'Jura', sans-serif;
@@ -190,12 +195,24 @@ footer p {
   display: block;
   font-size: 1em;
 }
-.short-info .info-list{
-  margin-top: 20px;
+.short-info .info-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
 }
-.short-info .info-list li{
-    margin: 50px 0;
-    font-size: 1.5em;
+.short-info .info-list li {
+  margin: 50px 0;
+  font-size: 1.5em;
+}
+.short-info .info-list li .icon {
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.short-info .info-list li .icon img {
+  height: 100%;
+  width: 100%;
 }
 /*preset page end*/
 #brands {
@@ -361,17 +378,17 @@ footer p {
   flex-direction: row;
 }
 #contact .wrapper .info-block .city-brand-contact,
-#contact .wrapper .info-block .wholesale-contact {
+#contact .wrapper .info-block .form-block {
   text-align: center;
   width: 50%;
 }
 #contact .wrapper .info-block .city-brand-contact h2,
-#contact .wrapper .info-block .wholesale-contact h2 {
+#contact .wrapper .info-block .form-block h2 {
   text-align: center;
   font-size: 2.5em;
 }
 #contact .wrapper .info-block .city-brand-contact .contact-list,
-#contact .wrapper .info-block .wholesale-contact .contact-list {
+#contact .wrapper .info-block .form-block .contact-list {
   width: 70%;
   margin: 0 auto;
   margin-top: 25px;
@@ -379,7 +396,7 @@ footer p {
   text-align: left;
 }
 #contact .wrapper .info-block .city-brand-contact .contact-list li,
-#contact .wrapper .info-block .wholesale-contact .contact-list li {
+#contact .wrapper .info-block .form-block .contact-list li {
   margin-bottom: 10px;
   font-size: 1.3em;
   display: flex;
@@ -387,20 +404,20 @@ footer p {
   align-items: center;
 }
 #contact .wrapper .info-block .city-brand-contact .contact-list li .title,
-#contact .wrapper .info-block .wholesale-contact .contact-list li .title {
+#contact .wrapper .info-block .form-block .contact-list li .title {
   color: grey;
   margin-right: 1em;
 }
 #contact .wrapper .info-block .city-brand-contact .contact-list li .info,
-#contact .wrapper .info-block .wholesale-contact .contact-list li .info {
+#contact .wrapper .info-block .form-block .contact-list li .info {
   color: grey;
 }
 #contact .wrapper .info-block .city-brand-contact .contact-list li .info a,
-#contact .wrapper .info-block .wholesale-contact .contact-list li .info a {
+#contact .wrapper .info-block .form-block .contact-list li .info a {
   color: grey;
 }
 #contact .wrapper .info-block .city-brand-contact .contact-list li .info img,
-#contact .wrapper .info-block .wholesale-contact .contact-list li .info img {
+#contact .wrapper .info-block .form-block .contact-list li .info img {
   height: 15px;
   width: 15px;
 }
@@ -520,8 +537,8 @@ footer p {
 }
 @media screen and (max-width: 767px) {
   .logo-wrapper {
-    padding-top: 50px!important;
     display: none;
+    padding-top: 50px!important;
   }
   .logo-wrapper .block {
     width: 20% !important;
@@ -645,10 +662,20 @@ footer p {
     font-size: 1em;
   }
   .short-info .row .description .hint {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .short-info .row .img-block {
     width: 100% !important;
+  }
+  .short-info .info-list {
+    flex-direction: column;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .short-info .info-list li {
+    margin: 30px 0;
+    font-size: 1.3em;
   }
   #shops .wrapper .shops-list li .info-block {
     padding: 10px;
@@ -693,17 +720,17 @@ footer p {
     align-items: center;
   }
   #contact .wrapper .info-block .city-brand-contact,
-  #contact .wrapper .info-block .wholesale-contact {
+  #contact .wrapper .info-block .form-block {
     border: none;
     width: auto;
   }
   #contact .wrapper .info-block .city-brand-contact h2,
-  #contact .wrapper .info-block .wholesale-contact h2 {
+  #contact .wrapper .info-block .form-block h2 {
     font-size: 1.5em;
     color: #e30a1b;
   }
   #contact .wrapper .info-block .city-brand-contact .contact-list,
-  #contact .wrapper .info-block .wholesale-contact .contact-list {
+  #contact .wrapper .info-block .form-block .contact-list {
     width: 100%!important;
   }
   #contact .wrapper .maps-block {
@@ -770,13 +797,12 @@ footer p {
   footer nav {
     display: none;
   }
-  
-  #present .wrapper .present-slider div {
-    margin-right: 0;
-  }
-  #present .wrapper{
+  #present .wrapper {
     margin-top: 0;
     padding-top: 70px;
+  }
+  #present .wrapper .present-slider div {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 550px) {
@@ -794,9 +820,6 @@ footer p {
   }
   #present .wrapper .resent-slider div {
     margin: 0 !important;
-  }
-  .short-info {
-/*    padding-top: 60px;*/
   }
 }
 .icon-phone,
