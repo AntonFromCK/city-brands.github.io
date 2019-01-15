@@ -42,6 +42,7 @@ a {
 //header
 header{
   position: relative;
+  z-index: 1000;
   .row{
     width: 100%;
     padding-top: 40px;
@@ -151,27 +152,6 @@ footer{
   height: 100%;
   background-color: #fff;
   padding-bottom: 50px;
-  .logo-wrapper{
-    padding-top: 50px;
-    text-align: center;
-    .block{
-      width: 10%;
-      margin: 0 auto;
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    p{
-      text-align: center;
-      opacity: 1;
-      color: @mainColor1;
-      text-transform: uppercase;
-      font-size: 1.5em;
-      margin-top: 30px;
-    }
-  }
   .wrapper{
     width: 90%;
     margin: 0 auto;
@@ -189,6 +169,37 @@ footer{
           height: 100%;
           width: 100%;
         }
+      }
+    }
+  }
+  #trailer {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .logo-wrapper{
+      margin: auto;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      .block{
+        width: 10%;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      p{
+        text-align: center;
+        opacity: 1;
+        color: @mainColor1;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin-top: 30px;
       }
     }
   }
@@ -914,7 +925,7 @@ footer{
   #present{
     .wrapper{
       margin-top: 0;
-      padding-top: 70px;
+      padding-top: 40px;
     }
   }
 
