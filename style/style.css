@@ -705,6 +705,7 @@ footer p {
   }
   .short-info .row {
     margin-top: 0;
+    padding-top: 50px;
     flex-direction: column-reverse;
   }
   .short-info .row .description {

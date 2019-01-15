@@ -95,15 +95,5 @@ $( document ).ready(function() {
         })
     })
 });
-$(window).resize(function(){
-    $.fn.swap = function (elem) {
-        elem = elem.jquery ? elem : $(elem);
-        return this.each(function () {
-            $(document.createTextNode('')).insertBefore(this).before(elem.before(this)).remove();
-        });
-    };
-    if ($(window).width() <= 767) {
-        $('#present').swap('.test')
-    }
-});
+
 
