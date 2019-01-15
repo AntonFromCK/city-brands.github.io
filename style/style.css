@@ -125,10 +125,11 @@ footer p {
 }
 /*preset page*/
 #present {
-  width: 100%;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
   background-color: #fff;
-  padding-bottom: 50px;
+  padding: 100px 0;
 }
 #present .wrapper {
   width: 90%;
@@ -847,6 +848,9 @@ footer p {
   }
   footer nav {
     display: none;
+  }
+  #present {
+    padding: 0;
   }
   #present .wrapper {
     margin-top: 0;
