@@ -54,6 +54,9 @@ header .row .social-icon-block li a {
   margin: 10px 15px;
   color: grey;
 }
+header .row .social-icon-block-front-page li a {
+  color: #ffffff;
+}
 header .row nav {
   width: auto;
   padding-left: 5%;
@@ -73,6 +76,9 @@ header .row nav ul li .nav-logo {
 }
 header .row nav ul li .nav-logo img {
   width: 50px;
+}
+header .row .font-page-nav ul a {
+  color: #ffffff;
 }
 header .row .mob-logo {
   display: none;
