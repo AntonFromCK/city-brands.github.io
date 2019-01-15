@@ -158,13 +158,13 @@ footer p {
 .fullwidth-bg .logo-wrapper {
   margin: auto;
   position: absolute;
-  top: 100px;
+  top: 200px;
   left: 0;
   bottom: 0;
   right: 0;
 }
 .fullwidth-bg .logo-wrapper .block {
-  width: 10%;
+  width: 20%;
   margin: 0 auto;
 }
 .fullwidth-bg .logo-wrapper .block img {
@@ -176,7 +176,7 @@ footer p {
   opacity: 1;
   color: #000100;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 2em;
   margin-top: 30px;
 }
 .fullwidth-bg .fullwidth-bg__video {
@@ -564,6 +564,9 @@ footer p {
   #contact .wrapper {
     width: 90%;
   }
+  .fullwidth-bg .logo-wrapper {
+    top: 70px;
+  }
 }
 @media screen and (max-width: 992px) {
   #wholesale .wrapper h1 {
@@ -581,6 +584,9 @@ footer p {
   }
 }
 @media screen and (max-width: 767px) {
+  .fullwidth-bg {
+    display: none;
+  }
   .logo-wrapper {
     display: none;
     padding-top: 50px!important;
